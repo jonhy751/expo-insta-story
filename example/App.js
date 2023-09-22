@@ -5,8 +5,8 @@ import ExpoInstaStory from 'expo-insta-story';
 export default function App() {
   function createData() {
     const array = [];
-    const userCount = 3;
-    const userStoryCount = 3;
+    const userCount = 4;
+    const userStoryCount = 4;
 
     for (let i = 1; i <= userCount; i++) {
       const storyArray = [];
@@ -37,6 +37,7 @@ export default function App() {
         stories: storyArray,
       });
     }
+
     return array;
   }
 
@@ -52,6 +53,7 @@ export default function App() {
           </View>
         }
         style={{ marginTop: 30 }}
+        avatarSize={50}
       />
     </View>
   );
